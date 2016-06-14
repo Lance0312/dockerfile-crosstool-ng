@@ -9,6 +9,7 @@ RUN apt-get update \
 
 RUN git clone https://github.com/crosstool-ng/crosstool-ng \
     && cd crosstool-ng \
+    && git checkout crosstool-ng-1.22.0 \
     && ./bootstrap \
     && ./configure --prefix=/usr \
     && make \
